@@ -192,7 +192,7 @@ class DisposableEmailChecker
 	 * @returns array An array of domains matching the specified file name.
 	 */
 	private static function _load_file( $p_type ) {
-		$t_array = file( dirname( dirname( __FILE__ ) ) . '/data/' . $p_type . '.txt' );
+		$t_array = file( dirname( __FILE__ ) . '/' . $p_type . '.txt' );
 		$t_result_array = array();
 
 		foreach ( $t_array as $t_line ) {
